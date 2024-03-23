@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #f57d1f;
+    --hover-color: #ffa726; /* Warna yang cocok untuk hover */
+    --active-color: #e64a19; /* Warna yang cocok untuk efek aktif */
+    --white-color: #fff;
+}
+
+.button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.5px solid grey;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1.5px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.button-primary:hover {
+    text-decoration: none;
+    color: white;
+    background-color: var(--hover-color);
+    transition: ease-in-out 0.2s;
+    border: 1.5px solid;
+}
+
+.button-primary:active {
+    background-color: var(--active-color);
+}
+
+.button-outline-primary {
+    background-color: transparent;
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.button-outline-primary:hover {
+    border: 1.5px solid transparent;
+    background-color: var(--hover-color);
+    color: var(--white-color);
+    transition: ease-in-out 0.2s;
+}
+
+.button-outline-primary:active {
+    background-color: var(--active-color);
+}
+
+/* Style untuk input */
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #d0d0d0; /* warna border */
+    border-radius: 0; /* sudut border */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* efek transisi */
+}
+
+/* Placeholder untuk input */
+input::placeholder,
+textarea::placeholder {
+    color: #d0d0d0; /* Warna teks placeholder */
+    opacity: 1; /* Opacity placeholder */
+}
+
+/* Placeholder untuk input yang difokuskan */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent; /* Mengubah warna teks placeholder saat input/textarea difokuskan */
+}
+
+/* Style untuk input/textarea saat fokus */
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color); /* warna border saat fokus */
+    outline: 0; /* menghilangkan outline */
+    box-shadow: 0 0 0 1.6px var(--primary-color); /* efek bayangan saat fokus */
+}
+
+/* Style untuk input/textarea saat dihover */
+input:hover,
+textarea:hover {
+    border-color: var(--hover-color); /* warna border saat hover */
+}
+
+/* Style untuk input/textarea saat diklik */
+input[type="text"]:active,
+textarea:active {
+    border-color: var(--primary-color); /* warna border saat diklik */
+}
+
+/* Style untuk select */
+select {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #d0d0d0; /* warna border */
+    border-radius: 0; /* sudut border */
+    background-color: transparent; /* transparan background */
+    -webkit-appearance: none; /* menghapus default arrow di Chrome/Safari */
+    -moz-appearance: none; /* menghapus default arrow di Firefox */
+    appearance: none; /* menghapus default arrow di modern browsers */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d0d0d0' width='25px' height='25px'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E"); /* ikon dropdown */
+    background-repeat: no-repeat;
+    background-position: right 20px center; /* posisi ikon dropdown */
+    background-size: 12px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* efek transisi */
+}
+
+/* Style untuk select saat fokus */
+select:focus {
+    border-color: var(--primary-color); /* warna border saat fokus */
+    outline: 0; /* menghilangkan outline */
+    box-shadow: 0 0 0 1.6px var(--primary-color); /* efek bayangan saat fokus */
+}
+
+/* Style untuk select saat dihover */
+select:hover {
+    border-color: var(--hover-color); /* warna border saat hover */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Sesuaikan dengan kebutuhan Anda */
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url("assets/eye-slash-svgrepo-com.svg"); /* Ganti dengan path ikon Anda */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.toggle-password.active {
+    background-image: url("assets/eye-svgrepo-com.svg"); /* Ganti dengan path ikon Anda */
+}
+
+.form-input-dashboard {
+    margin: 20px 0;
+}
+
+.form-input-dashboard label {
+    font-size: 16px;
+}
+
+#divide-label {
+    margin: 0;
+    font-size: 17px;
+    color: #747474;
+}

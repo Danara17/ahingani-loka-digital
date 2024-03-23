@@ -1,0 +1,53 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.bg-dashboard-primary {
+  background-color: #2c3e50;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
+.link-ref {
+  color: #f57d1f;
+}
+.link-ref:hover {
+  color: #d46d1e;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.divider-item {
+  color: #aaaaaa;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.nav-link {
+  position: static;
+  padding: 12px;
+  color: white;
+}
+
+.nav-link.active {
+  margin-left: 5px;
+  background-color: #1c2834;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-route:hover {
+  background-color: #1c2834;
+}
+
+.actived-bar {
+  position: absolute;
+  width: 5px;
+  height: calc(24px + 24px);
+  background-color: #f57d1f;
+}
